@@ -1,119 +1,184 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
     <meta
-      name="description"
-      content="Ecommerce de productos informáticos, situado en la Ciudad Capital de La Rioja."
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Maquetado Ecommerce</title>
-  </head>
-  <body>
-    <div
-      style="
-        position: relative;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        width: 1024px;
-      "
-    >
-      <nav>
-        <a href="contacto.html">Contáctenos</a>
-        <a href="#">Cerrar sesión</a>
-        <a href="#">Usuario</a>
-        <a href="#">Carrito (1)</a>
-        <hr />
-      </nav>
-      <header>
-        <a href="index.html"
-          ><img src="img/logo_sitio.png" alt="Logo sitio"
-        /></a>
 
-        <ul style="display: block; float: right; padding: 0 10px">
-          <li>
-            <a href="producto.html">Productos</a>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>Maquetado Ecommerce - Co CSS / BOOTSTRAP - Producto</title>
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-6">
+          <div class="d-flex">
+            <div class="mr-auto"><a href="contacto.html">Contáctenos</a></div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="d-flex">
+            <div class="ml-auto">Cerrar sesión</div>
+            <div class="ml-auto">José Chavez</div>
+            <div class="ml-auto">Carrito(1)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href="index.html"><img src="img/logo_sitio.png" alt="Logo sitio" /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="producto.html"
+              >Productos <span class="sr-only"></span
+            ></a>
           </li>
-          <li>
-            <a href="#">Arma tu PC</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Arma tu PC <span class="sr-only">(current)</span></a
+            >
           </li>
-          <li><a href="#">Mi cuenta</a></li>
-          <li>
-            <form action="#" method="post" target="_blank">
-              <input
-                type="search"
-                name="busqueda"
-                placeholder="Búsqueda en el catálogo"
-              />
-            </form>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Mi cuenta <span class="sr-only">(current)</span></a
+            >
           </li>
         </ul>
-      </header>
-      <section>
-        <article style="background-color: white">
-          <div>
-            <h2 style="text-align: left">Formulario de contacto</h2>
-            <form>
-              <label for="nombre">Nombre y Apellido</label><br /><br />
-              <input type="text" name="nombre_apellido" size="100" />
-              <br /><br />
-              <label for="email">Email</label><br /><br />
-              <input type="text" name="email" size="100" />
-              <br /><br />
-              <label for="celular">Tel. celular</label><br /><br />
-              <input type="text" name="tel_celular" size="100" />
-              <br /><br />
-              <label for="consulta">Asunto / Consulta</label><br /><br />
-              <textarea name="consulta" rows="10" cols="100"> </textarea>
-              <br /><br />
-              <input type="reset" value="Limpiar" />
-              <input type="submit" value="Enviar" />
-            </form>
-          </div>
-        </article>
-        <article style="background-color: rgb(210, 221, 220)">
-          <div>
-            <h2 style="text-align: center">Lo más vendido</h2>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Búsqueda en el catálogo"
+            aria-label="Search"
+          />
+        </form>
+      </div>
+    </nav>
+    <!-- FIN NAV -->
 
-            <div>
-              <div style="float: left; width: 33, 3%; outline: grey solid thin">
-                <img src="img/producto_1.jpeg" alt="producto 1" />
-                <h3><b>PC Gamer Armada AMD</b></h3>
-                <p>Athlon 3000G + 8GB (2x4GB) + VEGA 3</p>
-                <button><b>$120000</b></button>
-                <button><b>Comprar</b></button>
-              </div>
-              <div style="float: left; width: 33, 3%; outline: grey solid thin">
-                <img src="img/producto_2.jpeg" alt="producto 1" />
-                <h3><b>Mini PC Gamer AMD</b></h3>
-                <p>Ryzen 3 2200 + 8GB (2x4GB) + VEGA 8</p>
-                <button><b>$120000</b></button>
-                <button><b>Comprar</b></button>
-              </div>
-              <div style="width: 33, 3%; outline: grey solid thin">
-                <img src="img/producto_3.jpeg" alt="producto 1" />
-                <h3><b>PC Gamer Armada Intel</b></h3>
-                <p>Core I3 10100F + 8GB + RX 570</p>
-                <button><b>$120000</b></button>
-                <button><b>Comprar</b></button>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
+    <!-- Inicio Produco-->
 
-      <footer>
-        <div style="background-color: powderblue">
-          <p style="text-align: center; color: grey">
-            <b>
-              © 2021 - Ecommerce desarrollado por
-              <a href="https://www.linkedin.com/in/lic-jos%C3%A9-chavez/"
-                >Lic. José Chavez</a
-              ></b
-            >
-          </p>
-        </div>
-      </footer>
+    <div class="display-4 text-left p-5">
+      <small>Formulario de contacto</small>
     </div>
+
+    <div class="container bg-white">
+      <form>
+        <br /><br />
+        <div class="form-group row">
+          <label for="inputNyA" class="col-sm-2 col-form-label"
+            >Nombre y Apellido</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              id="inputNyA"
+              placeholder="Ingrese su Nombre y Apellido"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail"
+              placeholder="Ingrese su Email"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputTelCel" class="col-sm-2 col-form-label"
+            >Teléfono celular</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              id="inputTelCel"
+              placeholder="Ingrese su Teléfono celular"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputConsulta" class="col-sm-2 col-form-label"
+            >Asunto/Consulta</label
+          >
+          <div class="col-sm-10">
+            <textarea
+              class="form-control"
+              name="inputConsulta"
+              rows="8"
+              cols="50"
+              placeholder="Ingrese su asunto / consulta"
+            ></textarea>
+          </div>
+        </div>
+
+        <div
+          class="vh-100 row m-0 text-center align-items-center justify-content-center form-group row"
+        >
+          <div class="col-auto">
+            <button type="submit" class="btn btn-danger">Limpiar</button>
+            <button type="submit" class="btn btn-success">Enviar</button>
+          </div>
+        </div>
+
+        <br /><br />
+      </form>
+    </div>
+
+    <!-- Footer-->
+    <footer class="text-center footer-style">
+      <div class="p-3 mb-2 bg-info text-text-muted mt-5">
+        <bold>© 2021 - Ecommerce desarrollado por Lic. José Chavez</bold>
+      </div>
+    </footer>
+    <!--Fin footer-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
